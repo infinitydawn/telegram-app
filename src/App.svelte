@@ -1,10 +1,16 @@
 <script>
-	export let name;
+	let score = 0
+
+	function incrementScore(){
+		score += 1;
+	}
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h2>Score: {score}</h2>
+	<button class="clicker" on:click={incrementScore}>
+		<img src="assets/chillguy.png" alt="chill guy">
+	</button>
 </main>
 
 <style>
