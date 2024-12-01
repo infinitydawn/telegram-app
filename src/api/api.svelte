@@ -3,7 +3,7 @@
     
     export function getTgUser() {
         const { user } = useTelegram();
-        alert(user)
+        alert(user.id)
         const MY_ID = user?.id ?? 4040;
         return MY_ID
     }

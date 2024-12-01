@@ -2,8 +2,10 @@
 	import Modal from './components/modal.svelte'
 	import { getTgUser } from './api/api.svelte'
 
-	let user = getTgUser();
+	// let user = getTgUser();
+	const tg = window.Telegram.WebApp;
 
+	let user = tg.initDataUnsafe.id
 	let score = 0;
 
 	function incrementScore(){
@@ -14,7 +16,7 @@
 <Modal />
 <main>
 	<h2>Score: {score}</h2>
-	<h2>User**: {user}</h2>
+	<h2>User~: {user}</h2>
 	<button class="clicker" on:click={incrementScore}>
 		<img src="assets/chillguy.png" alt="chill guy">
 	</button>
