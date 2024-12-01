@@ -14,7 +14,7 @@
 <Modal />
 <main>
 	<h2>Score: {score}</h2>
-	<h2>User*: {user}</h2>
+	<h2>User**: {user}</h2>
 	<button class="clicker" on:click={incrementScore}>
 		<img src="assets/chillguy.png" alt="chill guy">
 	</button>
