@@ -1,13 +1,20 @@
 <script>
-	let score = 0
+	import Modal from './components/modal.svelte'
+	import { getTgUser } from './api/api.svelte'
+
+	let user = getTgUser();
+
+	let score = 0;
 
 	function incrementScore(){
 		score += 1;
 	}
 </script>
 
+<Modal />
 <main>
 	<h2>Score: {score}</h2>
+	<h2>User: {user}</h2>
 	<button class="clicker" on:click={incrementScore}>
 		<img src="assets/chillguy.png" alt="chill guy">
 	</button>
