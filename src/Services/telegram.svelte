@@ -4,7 +4,7 @@
 
         return {
             tg,
-            user: tg.uinitDataUnsafe?.user, // only works inside Telegram, browser will show 4040
+            user: tg.initDataUnsafe?.user, // only works inside Telegram, browser will show 4040
         };
     }
 </script>
