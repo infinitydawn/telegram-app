@@ -1,4 +1,4 @@
-<script>
+<script context="module">
     export function useTelegram() {
         const tg = window.Telegram.WebApp;
 

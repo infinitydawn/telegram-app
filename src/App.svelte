@@ -2,10 +2,10 @@
 	import Modal from './components/modal.svelte'
 	import { getTgUser } from './api/api.svelte'
 
-	// let user = getTgUser();
-	const tg = window.Telegram.WebApp;
+	let user = getTgUser();
+	// const tg = window.Telegram.WebApp;
 
-	let user = tg.initDataUnsafe.id
+	// let user = tg.initDataUnsafe.id
 	let score = 0;
 
 	function incrementScore(){

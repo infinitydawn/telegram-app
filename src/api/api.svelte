@@ -1,5 +1,5 @@
 <script context="module">
-    import { useTelegram } from "../Services/telegram";
+    import { useTelegram } from "../Services/telegram.svelte";
     
     export function getTgUser() {
         const { user } = useTelegram();
